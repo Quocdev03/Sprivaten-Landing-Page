@@ -1,0 +1,124 @@
+.footer {
+
+    &-header {
+        background-color: $text-color;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    &-social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 57px;
+        padding-bottom: 44px;
+        border-bottom: 1px solid #364067;
+    }
+
+    &-icon {
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) 2fr;
+        grid-gap: 0 30px;
+    }
+
+    &-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $light-text-color;
+        margin-bottom: 20px;
+    }
+
+    &-link {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: $muted-color;
+        margin-bottom: 10px;
+    }
+
+    &-desc {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 28px;
+        color: $muted-color;
+        margin-top: 10px;
+    }
+
+    &-bottom {
+        background-color: $secondary-color-2;
+        padding: 25px 0;
+    }
+
+    &-copyright {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: $light-text-color;
+
+    }
+
+    &-button {
+        padding: 12px 23px;
+        background: $primary-color ;
+        color: $light-text-color;
+        border: 1px solid #E6E6E6;
+        border-radius: 0px 5px 5px 0px;
+        text-transform: uppercase;
+        border-style: none;
+        cursor: pointer;
+        outline: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    &-form {
+        display: flex;
+        max-width: 321px;
+        padding-left: 20px;
+        justify-content: center;
+        align-items: center;
+        background: #F9F9F9;
+        border: 1px solid #E6E6E6;
+        border-radius: 5px;
+    }
+
+    &-input {
+        width: 100%;
+        background: none;
+        border: 0;
+        padding: 0;
+        outline: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        color: $muted-color;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023.98px) {
+        &-list {
+            grid-template-columns: repeat(3, 1fr) !important;
+        }
+
+    }
+
+    @media screen and (max-width: 768.98px) {
+        &-list {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 40px 0;
+        }
+
+        &-copyright {
+            display: block;
+            text-align: center;
+        }
+    }
+
+}

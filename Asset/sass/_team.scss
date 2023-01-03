@@ -1,0 +1,117 @@
+.team {
+    padding: 80px 0;
+
+    &-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &-content {
+        margin-bottom: 80px;
+    }
+
+    &-title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 57px;
+        color: $text-color;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    &-caption {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: $secondary-text-color;
+        width: 100%;
+        max-width: 470px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 30px;
+    }
+
+    &-item {
+        border: 1px solid #EEEEEE;
+        border-radius: 2px;
+        flex: 1;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+    }
+
+    &-image {
+        img {
+            width: 100%;
+            height: 231px;
+            object-fit: cover;
+        }
+    }
+
+    &-infor {
+        padding: 30px 66px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &-name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-color;
+        margin-bottom: 5px;
+    }
+
+    &-job {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: $secondary-text-color;
+        margin-bottom: 5px;
+    }
+
+    &-social {
+        display: flex;
+        align-items: center;
+        gap: 0 15px;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        &-list {
+            grid-gap: 30px 30px;
+            grid-template-columns: repeat(3, 1fr) !important;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &-list {
+            grid-gap: 30px 30px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 767.98px) {
+        &-list {
+            grid-gap: 30px 30px;
+            grid-template-columns: 1fr;
+        }
+    }
+}

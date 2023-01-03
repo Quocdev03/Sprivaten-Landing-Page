@@ -1,0 +1,22 @@
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+
+    &-link {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 174%;
+        color: $secondary-text-color;
+        cursor: pointer;
+    }
+
+    &-toggle {
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        display: none;
+    }
+
+}

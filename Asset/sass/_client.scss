@@ -1,0 +1,125 @@
+.client {
+    background-color: #F3F3F3;
+    padding: 80px 0;
+
+    &-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &-content {
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    &-title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 57px;
+        color: $text-color;
+        margin-bottom: 10px;
+    }
+
+    &-caption {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: $secondary-text-color;
+        width: 100%;
+        max-width: 470px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 32px;
+    }
+
+    &-item {
+        padding: 30px 35px;
+        background-color: $light-text-color;
+        border-radius: 5px;
+        flex: 1;
+    }
+
+    &-rating {
+        display: flex;
+        align-items: center;
+        gap: 0 5px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    &-desc {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        width: 100%;
+        max-width: 234px;
+        color: $secondary-text-color;
+        margin-bottom: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+    }
+
+    &-user {
+        display: flex;
+        align-items: center;
+        gap: 0 15px;
+        margin-top: 10px;
+    }
+
+    &-avatar {
+        cursor: pointer;
+
+        img {
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+        }
+    }
+
+    &-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: $primary-color;
+    }
+
+    &-job {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: $text-color;
+    }
+
+    @media screen and (min-width: 1024px) {
+        &-list {
+            grid-gap: 30px 30px;
+            grid-template-columns: repeat(3, 1fr) !important;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &-list {
+            grid-gap: 30px 30px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 767.98px) {
+        &-list {
+            grid-gap: 30px 30px;
+            grid-template-columns: 1fr;
+        }
+    }
+
+}
